@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Abduselam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+
+    <div class="myWrapper" style="margin:28px;">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo" style="width:82px;height:62px;"></a>
+        </nav>
+    </div>
+    <a id="about" onclick="window.location='graphicprojects.html';" class="animated fadeIn" style="animation-delay:2.2s;">design projects</a>
+    <a id="work" onclick="window.location='webprojects.html';" class="animated fadeIn" style="animation-delay:2.2s;">web projects</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1><span style="color:white;">Hi,</span> I'm Abduselam.</h1>
+        <h3>
+            I'm a Graphic designer, Web developer, and UI/UX designer with strong experience in apps, websites, visual identity, mockups, and more. Please take a peek at some of my work and feel free to contact me.
+        </h3>
+        <h4>
+            Email: absydesigns@gmail.com
+        </h4>
+
+        <div id="menu">
+            <a href="graphicprojects.html">design projects</a>
+            <a href="webprojects.html">web projects</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+            <tr style="position: absolute; left: 150px; bottom: 110px; ">
+                <td class="animated zoomIn" style="animation-delay:2.2s;"><a href="https://www.linkedin.com/in/absy-designs/" class="social"><i class="fab fa-linkedin"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://github.com/Absi0" class="social"><i class="fab fa-github"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.6s;"><a href="https://www.instagram.com/abs17c/" class="social"><i class="fab fa-instagram"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://www.behance.net/absyaman" class="social"><i class="fab fa-behance"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.8s;"><a href="https://dribbble.com/absydesigns" class="social"><i class="fab fa-dribbble"></i></a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+
+    </div>
+    <div id="about_container" class="container">
+        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+
+    </div>
+    <div id="contact_container" class="container">
+        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <h1></h1>
+        <section>
+            <h2>Say Hi!</h2>
+            <p>
+                <form action="mailto:absydesigns@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" placeholder="name" required>
+                    <input type="email" placeholder="email" required><br>
+                    <textarea placeholder="your message" required rows="5"></textarea><br>
+                    <button class="btn_one" type="submit">send</button>
+                </form>
+            </p>
+        </section>
+    </div>
+    <div id="footer">
+        made with ❤️ by  <br> <a href="https://github.com/Absi0">absydesigns</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script>
+
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+        })
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        })
+
+    </script>
+</body>
+</html>

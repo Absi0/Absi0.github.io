@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Abduselam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="webprojects.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s; height:min-content;">
+        <div class="nav-container">
+            <div class="wrapper">
+                <nav>
+                    <td id="myMenu">
+                        <div class="myWrapper">
+                            <nav>
+                                <a href="index.html"><img src="images/logo.png" alt="logo" style="width:82px;height:62px;"></a>
+                            </nav>
+                        </div>
+                    </td>
+
+                    <ul class="nav-items">
+                        <h3 id="navigation">
+
+                            <a href="graphicprojects.html">graphic design projects</a>
+                        </h3>
+
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+   
+    <div id="work">
+        <br/><br/><br/><br/><br/>
+        <h2>Web Projects</h2> 
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="images/sound.png">
+            <img onclick="magnify($(this).attr('src'))" src="images/miscela.png">
+            <img onclick="magnify($(this).attr('src'))" src="images/miscelapage.png">
+            <img onclick="magnify($(this).attr('src'))" src="images/sound3.png">
+            <img onclick="magnify($(this).attr('src'))" src="images/sound2.png">
+            <img onclick="magnify($(this).attr('src'))" src="images/miscelapage.png">
+            <img onclick="magnify($(this).attr('src'))" src="images/miscela3.png">
+            <img onclick="magnify($(this).attr('src'))" src="images/mysite.png">
+
+
+
+        </div>
+    </div>
+   
+  
+    <div id="footer">
+        made with ❤️ by  <br> <a href="https://abduselam.me">absydesigns</a>
+    </div>
+    <script src="webprojects.js" type="text/javascript"></script>
+</body>
+</html>
